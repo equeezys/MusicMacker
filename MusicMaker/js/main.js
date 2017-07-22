@@ -3,11 +3,20 @@ window.onload = function() {
 
     // add eventListener for tizenhwkey
     document.addEventListener('tizenhwkey', function(e) {
-        if (e.keyName === "back") {
-            try {
-                tizen.application.getCurrentApplication().exit();
-            } catch (ignore) {}
-        }
-    });
+    	
+        var page = document.getElementsByClassName('ui-page-active')[0],
+        pageid;
 
+    pageid = page ? page.id : "";
+
+    if (pageid === "main-page") {
+        try {
+            tizen.application.getCurrentApplication().exit();
+        } catch (ignore) {}
+    } else {
+    	 window.history.back();
+    }
+    });
+        $( "#sortable" ).sortable();
+        $( "#sortable" ).disableSelection();
 };

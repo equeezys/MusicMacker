@@ -14,7 +14,6 @@
 	
 	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
     
-    
     <script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/jquery-ui-custom.js"></script>
 	<script src="js/jquery.ui.touch-punch.js"></script>
@@ -51,6 +50,12 @@
   		  </hgroup>
 		</header>
         <div data-role="main" class="ui-content">
+        <ul id="sortable">
+			  <li class="ui-btn" onclick="document.getElementById('player').play()" ><div class="ui-icon"><audio id="player" src="level1/setall.wav"></audio></div>Item 1</li>
+			  <li class="ui-btn" onclick="document.getElementById('level11').play()" ><div class="ui-icon"><audio id="level11" src="level1/set1.wav"></audio></div>Item 2</li>
+			  <li class="ui-btn" onclick="document.getElementById('level12').play()" ><div class="ui-icon"><audio id="level12" src="level1/set2.wav"></audio>Item 3</li>
+			  <li class="ui-btn" onclick="document.getElementById('level13').play()" ><div class="ui-icon"><audio id="level13" src="level1/set3.wav"></audio>Item 4</li>
+		</ul>
         </div>
     </div> <!-- page one  -->
     

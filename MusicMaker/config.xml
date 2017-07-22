@@ -5,5 +5,6 @@
     <feature name="http://tizen.org/feature/screen.size.all"/>
     <icon src="icon.png"/>
     <name>MusicMaker</name>
+    <preference name="*" value="" readonly="true"/>
     <tizen:profile name="mobile"/>
 </widget>
