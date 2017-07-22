@@ -18,5 +18,6 @@ window.onload = function() {
     }
     });
         $( "#sortable" ).sortable();
-        $( "#sortable" ).disableSelection();
+        		
+        $( "#ui-btn2" ).draggable();
 };
