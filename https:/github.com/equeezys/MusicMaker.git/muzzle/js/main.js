@@ -26,7 +26,6 @@ audioFiles = [[
                  2.071247,
                  10.366644
                  ]];
-
 function preloadAudio(url) {
     var audio = new Audio();
     // once this file loads, it will call loadedAudio()
@@ -336,20 +335,13 @@ window.onload = function() {
 };
 function playlistItemClick(clickedElement) {
 	var _playlist=document.getElementById("musicList");
-	//var _player2 = document.getElementById("player");
     var selected = _playlist.querySelector(".selected");
     if (selected) {
         selected.classList.remove("selected");
     }
     clickedElement.classList.add("selected");
     play(clickedElement.id[1]);
-    	//_player2.src = clickedElement.getAttribute("src");
-    	//_player2.play();
 }
-/*aud.onloadeddata = function(){
-    var audDuration = aud.duration;
-    console.log("aud.duration = " + audDuration);
-    }*/
 function playNext(){
 	q=0;
 }
