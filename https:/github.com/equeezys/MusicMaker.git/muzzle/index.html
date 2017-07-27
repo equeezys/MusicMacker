@@ -9,7 +9,7 @@
     <title>Tizen Mobile Web Basic Application</title>
 
     
-    <link rel="stylesheet" href="css/equeery.min.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
 	<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css">
 	
 	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
@@ -24,8 +24,8 @@
     <script src="js/main.js"></script>
 </head>
 
-<body>
-	<div data-role="page"  id="one">
+<body >
+	<div data-role="page"  id="one" style="background-image:'src/img.jpg'">
 		<header data-role="header">
   		  <hgroup>
      		 <h1 align="center">MusicMaker 1.0</h1>
@@ -39,9 +39,6 @@
             	
           </ul>
         </div>
-		<footer data-role="footer">
-		  <p>&copy; 2012 Company Name. All rights reserved.</p>
-		</footer>
     </div> <!-- page one  -->
     
     	<div data-role="page"  id="level">
@@ -66,8 +63,8 @@
 		</ul>
 		<button class="ui-btn" " id="s3">Music</button>
 		</div>
-		<div id="count" class="ui-body-a" align="center">0</div>
 		<button class="ui-btn" " src="" id="playAll" >Play</button>
+		<div id="count" class="ui-body-a" align="center" style="font-size:100pt;">0</div>
 		<audio id="playerAll0" preload="auto" src="src/level1/nset0.wav">
 		<audio id="playerAll1" preload="auto" src="src/level1/nset1.wav">
 		<audio id="playerAll2" preload="auto" src="src/level1/gget2.wav">
@@ -102,8 +99,8 @@
 		</ul>
 		<button class="ui-btn" " id="l3">Music</button>
 		</div>
-		<div id="count2" class="ui-body-a" align="center">0</div>
 		<button class="ui-btn" " src="" id="playAll2" >Play</button>
+		<div id="count3" class="ui-body-a" align="center" style="font-size:100pt;">0</div>
 		
 		<audio id="playerAll20" preload="auto" src="src/level2/set0.wav">
 		<audio id="playerAll21" preload="auto" src="src/level2/g2t1.wav">
@@ -130,8 +127,8 @@
         <div id ="musicList3" >
         <ul id ="sortablePlaylist3" class="sortablePlaylist">
         		<li class="ui-state-default" id="i3em1" ><span class="ui-btn" id="x1" >Sound 0</span></li>
-        		<li class="ui-state-default" id="i3em2" ><span class="ui-btn" id="x2"  >Sound 1</span></li>
-        		<li class="ui-state-default" id="i3em0" ><span class="ui-btn" id="x0" >Sound 2</span></li>
+        		<li class="ui-state-default" id="i3em0" ><span class="ui-btn" id="x0" >Sound 1</span></li>
+        		<li class="ui-state-default" id="i3em2" ><span class="ui-btn" id="x2"  >Sound 2</span></li>
         	 <!-- <li class="ui-btn" onclick="playItem1();" ><div class="ui-icon"><audio id="level13" ></audio></div>Item 0</li> <!-- document.getElementById('level13').play()
 			    <li class="ui-btn" onclick="playItem2()" ><div class="ui-icon"><audio id="level11" src="src/level1/set1.wav"></audio></div>Item 1</li>
 			  <li class="ui-btn" onclick="playItem3()" ><div class="ui-icon"><audio id="level12" src="src/level1/set2.wav"></audio></div>Item 2</li>
@@ -139,8 +136,8 @@
 		</ul>
 		<button class="ui-btn" " id="x3">Music</button>
 		</div>
-		<div id="count3" class="ui-body-a" align="center">0</div>
 		<button class="ui-btn" " src="" id="playAll3" >Play</button>
+		<div id="count3" class="ui-body-a" align="center" style="font-size:100pt;">0</div>
 		
 		<audio id="playerAll30" preload="auto" src="src/level3/set0.wav">
 		<audio id="playerAll31" preload="auto" src="src/level3/g3t1.wav">
@@ -158,6 +155,7 @@
   		  </hgroup>
 		</header>
         <div data-role="main">
+        
         </div>
     </div> <!-- page options  -->
     
@@ -168,10 +166,10 @@
   		  </hgroup>
 		</header>
         <div data-role="main">
-   			<ul  data-role="listview">
-            	<li><a href="#level" class="ui-btn">Level1</a></li>
-            	<li><a href="#level2" class="ui-btn">Level2</a></li>
-            	<li><a href="#level3" class="ui-btn">Level3</a></li>
+   			<ul  data-role="listview" >
+            	<li><a href="#level" style="height: 40pt">Level1</a></li>
+            	<li><a href="#level2"  style="height: 40pt">Level2</a></li>
+            	<li><a href="#level3"  style="height: 40pt">Level3</a></li>
             		
        		</ul>
         </div>

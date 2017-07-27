@@ -325,11 +325,13 @@ window.onload = function() {
        $( "#sortablePlaylist3" ).sortable({
     	   change: function( event, ui ) {
     		   if (q==0){
-    			   countUpdate++;
-    			   $("#count3").html(countUpdate);
-       		   }
-    		   else $(this).sortable( "cancel" );
-    	   }
+    			   	countUpdate++;
+    		   		$("#count3").html(countUpdate);
+    		   }
+    		   else 
+    			   $(this).sortable( "cancel" );
+    		   
+    	}
     	 });
 };
 function playlistItemClick(clickedElement) {
