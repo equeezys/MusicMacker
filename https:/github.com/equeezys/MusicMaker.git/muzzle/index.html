@@ -28,7 +28,7 @@
 	<div data-role="page"  id="one" style="background-image:'src/img.jpg'">
 		<header data-role="header">
   		  <hgroup>
-     		 <h1 align="center">MusicMaker 1.0</h1>
+     		 <h1 align="center">Muzzle</h1>
      		 <h2 align="center">Menu</h2>
   		  </hgroup>
 		</header>
@@ -44,7 +44,7 @@
     	<div data-role="page"  id="level">
 		<header data-role="header" style="allign:center">
   		  <hgroup>
-     		 <h1 align="center">Level 1</h1>
+     		 <h1 align="center">Level 0</h1>
   		  </hgroup>
 		</header>
         <div data-role="main" class="ui-content">
@@ -76,7 +76,7 @@
     	<div data-role="page"  id="level2" >
 		<header data-role="header" style="allign:center">
   		  <hgroup>
-     		 <h1 align="center">Level 2</h1>
+     		 <h1 align="center">Level 1</h1>
   		  </hgroup>
 		</header>
         <div data-role="main" class="ui-content" onload="loadSrc">
@@ -89,8 +89,8 @@
         </audio>
         <div id ="musicList2" >
         <ul id ="sortablePlaylist2" class="sortablePlaylist">
-        		<li class="ui-state-default" id="i2em1" ><span class="ui-btn ui-icon-arrow-u-d ui-btn-icon-left" id="l1" >Sound 0</span></li>
-        		<li class="ui-state-default" id="i2em2" ><span class="ui-btn ui-icon-arrow-u-d ui-btn-icon-left" id="l2"  >Sound 1</span></li>
+        		<li class="ui-state-default" id="i2em2" ><span class="ui-btn ui-icon-arrow-u-d ui-btn-icon-left" id="l2" >Sound 0</span></li>
+        		<li class="ui-state-default" id="i2em1" ><span class="ui-btn ui-icon-arrow-u-d ui-btn-icon-left" id="l1"  >Sound 1</span></li>
         		<li class="ui-state-default" id="i2em0" ><span class="ui-btn ui-icon-arrow-u-d ui-btn-icon-left" id="l0" >Sound 2</span></li>
         	 <!-- <li class="ui-btn" onclick="playItem1();" ><div class="ui-icon"><audio id="level13" ></audio></div>Item 0</li> <!-- document.getElementById('level13').play()
 			    <li class="ui-btn" onclick="playItem2()" ><div class="ui-icon"><audio id="level11" src="src/level1/set1.wav"></audio></div>Item 1</li>
@@ -100,7 +100,7 @@
 		<button class="ui-btn" " id="l3">Music</button>
 		</div>
 		<button class="ui-btn" " src="" id="playAll2" >Play</button>
-		<div id="count3" class="ui-body-a" align="center" style="font-size:100pt;">0</div>
+		<div id="count2" class="ui-body-a" align="center" style="font-size:100pt;">0</div>
 		
 		<audio id="playerAll20" preload="auto" src="src/level2/set0.wav">
 		<audio id="playerAll21" preload="auto" src="src/level2/g2t1.wav">
@@ -113,7 +113,7 @@
     <div data-role="page"  id="level3" >
 		<header data-role="header" style="allign:center">
   		  <hgroup>
-     		 <h1 align="center">Level 3</h1>
+     		 <h1 align="center">Level 2</h1>
   		  </hgroup>
 		</header>
         <div data-role="main" class="ui-content" onload="loadSrc">
@@ -147,6 +147,43 @@
         
     </div> <!-- page Level3  -->
     
+        <div data-role="page"  id="level4" >
+		<header data-role="header" style="allign:center">
+  		  <hgroup>
+     		 <h1 align="center">Bonus Level</h1>
+  		  </hgroup>
+		</header>
+        <div data-role="main" class="ui-content" onload="loadSrc">
+        <audio id="player4" preload="auto">
+          <source id="audio2Source0" src="src/level1/set2.wav"></source>
+          <source id="audio2Source1" src="src/level2/set2.wav"></source>
+          <source id="audio2Source2" src="src/level3/set2.wav"></source>
+          <source id="audio2Sourceall" src="src/level2/setall.wav"></source>
+  			Your browser does not support the audio format.
+        </audio>
+        <div id ="musicList4" >
+        <ul id ="sortablePlaylist4" class="sortablePlaylist">
+        		<li class="ui-state-default" id="i4em0" ><span class="ui-btn ui-icon-arrow-u-d ui-btn-icon-left" id="x0" >Level 0</span></li>
+        		<li class="ui-state-default" id="i4em2" ><span class="ui-btn ui-icon-arrow-u-d ui-btn-icon-left" id="x1" >Level 1</span></li>
+        		<li class="ui-state-default" id="i4em1" ><span class="ui-btn ui-icon-arrow-u-d ui-btn-icon-left" id="x2"  >Level 2</span></li>
+        	 <!-- <li class="ui-btn" onclick="playItem1();" ><div class="ui-icon"><audio id="level13" ></audio></div>Item 0</li> <!-- document.getElementById('level13').play()
+			    <li class="ui-btn" onclick="playItem2()" ><div class="ui-icon"><audio id="level11" src="src/level1/set1.wav"></audio></div>Item 1</li>
+			  <li class="ui-btn" onclick="playItem3()" ><div class="ui-icon"><audio id="level12" src="src/level1/set2.wav"></audio></div>Item 2</li>
+			  <li class="ui-btn" onclick="document.getElementById('level10').play()" ><div class="ui-icon"><audio id="level10" src="src/level1/set0.wav"></audio></div>Item 3</li>-->
+		</ul>
+		<button class="ui-btn" " id="x5">Music</button>
+		</div>
+		<button class="ui-btn" " src="" id="playAll4" >Play</button>
+		<div id="count3" class="ui-body-a" align="center" style="font-size:100pt;">0</div>
+		
+		<audio id="playerAll40" preload="auto" src="src/level1/setall.wav">
+		<audio id="playerAll41" preload="auto" src="src/level4/set41.wav">
+		<audio id="playerAll42" preload="auto" src="src/level4/set42.wav">
+		<!--  <button class="ui-btn" "  id="reSortList" >Refresh</button>-->
+        </div>
+        
+    </div> <!-- page Level4 -->
+    
     
        	<div data-role="page"  id="options">
 		<header data-role="header" style="allign:center">
@@ -167,9 +204,10 @@
 		</header>
         <div data-role="main">
    			<ul  data-role="listview" >
-            	<li><a href="#level" style="height: 40pt">Level1</a></li>
-            	<li><a href="#level2"  style="height: 40pt">Level2</a></li>
-            	<li><a href="#level3"  style="height: 40pt">Level3</a></li>
+            	<li><a href="#level" style="height: 40pt">Level0</a></li>
+            	<li><a href="#level2"  style="height: 40pt">Level1</a></li>
+            	<li><a href="#level3"  style="height: 40pt">Level2</a></li>
+            	<li><a href="#level4"  style="height: 40pt">Bonus Level</a></li>
             		
        		</ul>
         </div>
